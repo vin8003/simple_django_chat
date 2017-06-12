@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'channels',
+    'server'
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,9 @@ CHANNEL_LAYERS = {
        "ROUTING": "simple_chat.routing.channel_routing",
     },
 }
+
+# login and logout redirect to /
+LOGIN_REDIRECT_URL = "/"
+
+LOGOUT_REDIRECT_URL = "/"
+

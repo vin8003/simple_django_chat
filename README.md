@@ -3,5 +3,6 @@
 ### sudo apt install redis-server
 ### pip install -r requirements.txt
 ### cd simple_chat
-### ./manage.py createsuperuser
-### ./manage.py runserver
+### python manage.py migrate
+### python manage.py createsuperuser
+### python manage.py runserver

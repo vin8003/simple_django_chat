@@ -3,7 +3,7 @@ from django.db import models
 from django.utils.six import python_2_unicode_compatible
 from channels import Group
 
-from simple_chat.settings import MSG_TYPE_MESSAGE
+from .settings import MSG_TYPE_MESSAGE
 
 
 @python_2_unicode_compatible

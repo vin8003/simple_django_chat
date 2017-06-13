@@ -9,9 +9,9 @@ def catch_client_error(func):
     Decorator to catch the ClientError exception and translate it into a reply.
     """
     @wraps(func)
-    def inner(message, args, **kwargs):
+    def inner(message,  **kwargs):
         try:
-            return func(message, args, **kwargs)
+            return func(message,  **kwargs)
         except ClientError as e:
             # If we catch a client error, tell it to send an error string
             # back to the client on their reply channel
